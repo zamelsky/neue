@@ -21,10 +21,33 @@
         <%= @example_html.gsub('$modifier_class', " #{modifier.class_name}") %>
       </div>
     <% end %>
+   <nav class="tabs tabs--kss">
+      <ul>
+        <li><a class="active" href="#">HTML</a></li>
+        <li><a href="#">PHP</a></li>
+        <li><a href="#">JavaScript</a></li>
+        <li><a href="#">Ruby</a></li>
+      </ul>
+    </nav>
     <div class="styleguide-html">
       <pre class="styleguide-code"><code class="html">
 <%= @escaped_html %>
       </code></pre>
+
+      <pre class="styleguide-code" style="display: none;"><code class="php">
+&lt;?php <%= @escaped_php %> ?&gt;
+      </code></pre>
+
+      <pre style="display: none;" class="styleguide-code"><code class="ruby">
+// work in progress; use plain HTML for now!
+<%= @escaped_js %>
+      </code></pre>
+
+      <pre style="display: none;" class="styleguide-code"><code class="ruby">
+# work in progress; use plain HTML for now!
+<%= @escaped_ruby %>
+      </code></pre>
+
     </div>
   </div>
 

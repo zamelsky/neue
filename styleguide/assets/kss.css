@@ -30,8 +30,7 @@ h1.styleguide {
       color: #999; }
   .styleguide-example .styleguide-description {
     padding: 10px 15px;
-    background: #f1f1f1;
-    border-bottom: 1px solid #ddd; }
+    background: #f1f1f1;}
     .styleguide-example .styleguide-description p:first-child {
       margin-top: 0; }
     .styleguide-example .styleguide-description p:last-child {
@@ -57,9 +56,8 @@ h1.styleguide {
     border-top: none;
     z-index: 10;}
   .styleguide-example .styleguide-html {
-    padding: 10px 25px 10px 5px;
+    padding: 10px 25px 10px 20px;
     background: #efefef;
-    border-top: 1px solid #dde7ea;
     font-size: 18px;
     overflow: auto; }
   .hljs { background: transparent !important; display: inline !important; padding-right: 25px !important; }
@@ -189,6 +187,15 @@ h1.styleguide {
 header[role="banner"].-styleguide {
   background: url("grid_2x.png");
   background-size: 105px 105px;
+}
+
+
+.tabs--kss {
+  padding-bottom: 0;
+}
+
+.tabs--kss ul {
+  margin-bottom: 9px;
 }
 
 

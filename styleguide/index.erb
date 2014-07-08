@@ -236,17 +236,7 @@
   <% end %>
 
   <h4 id="tile">4.7 Tile</h4>
-  <% styleguide_block  '4.7.1 - Tile' do %>
-    <article class="tile tile--campaign">
-      <a class="wrapper" href="#">
-        <div class="tile--meta">
-          <h1 class="__title">Kitten Overlords</h1>
-          <p class="__tagline">According to the latest research, kittens will outlive the human species after the apocalypse.</p>
-        </div>
-        <img alt="kitten overlords" src="http://placekitten.com/g/600/600" />
-      </a>
-    </article>
-  <% end %>
+  <%= styleguide_component("4.7.1 - Tile", "tile", :title => "Kittens", :tagline => "Sometimes they are cute.", :src => "http://placekitten.com/g/600/600") %>
 
   <h4 id="gallery">4.8 Gallery</h4>
   <% styleguide_block  '4.8.1 - Gallery' do %>
